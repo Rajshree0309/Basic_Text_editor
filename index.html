@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Text Editor</h1>
+    <div class="theme-toggle">
+      <label for="themeToggle">Toggle Theme: </label>
+      <input type="checkbox" id="themeToggle">
+    </div>
+    <div class="editor-container">
+      <textarea id="editor" rows="10" placeholder="Start typing here..."></textarea>
+      <div class="controls">
+        <label for="fontSelect">Font:</label>
+        <select id="fontSelect">
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Tahoma">Tahoma</option>
+        </select>
+        <label for="fontSize">Size:</label>
+        <input type="number" id="fontSize" min="10" max="24" value="16">
+        <label for="fontColor">Color:</label>
+        <input type="color" id="fontColor" value="#000000">
+        <label for="fontWeight">Weight:</label>
+        <select id="fontWeight">
+          <option value="normal">Normal</option>
+          <option value="bold">Bold</option>
+        </select>
+        <label for="fontStyle">Style:</label>
+        <select id="fontStyle">
+          <option value="normal">Normal</option>
+          <option value="italic">Italic</option>
+        </select>
+        <button id="applyStyles">Apply Styles</button>
+        <button id="saveBtn">Save</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
